@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap');
+
+:root{
+    --color-title: #dc2f02;
+    --color-text: white;
+    --color-btn: #e85d04;
+    --color-bg: #6a040f;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+}
+
+body{
+    font-size: 16px;
+    font-family: 'Rubik', sans-serif;
+}
+
+header{
+    width: 100%;
+    background-color: #370617;
+    color: white;
+}
+
+header nav{
+    width: 75%;
+    margin: auto;
+}
+
+header nav .hamburguer {
+    position: absolute;
+    right: 25px;
+    padding: 8px;
+    font-size: 25px;
+    z-index: 3;
+    display: none;
+}
+
+header nav ul{
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+}
+
+header nav ul li{
+    list-style-type: none;
+    padding: 5px;
+}
+header nav ul li:hover{
+    background-color: var(--color-bg);
+    cursor: pointer;
+    color: #dc2f02;
+}
+
+main{
+    background-color: #03071e;
+    width: 100%;
+}
+
+main .bg-conteiner{
+    width: 75%;
+    margin: auto;
+    height: auto;
+}
+
+main .home{
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+    height: 100vh;
+}
+
+main .home .home-text{
+    text-align: center;
+}
+
+main .home .home-text h2{
+    padding: 5px;
+    margin: 0;
+}
+
+main .home .home-text h2 span{
+    color: #dc2f02;
+}
+
+main .home .home-text p{
+    padding: 5px;
+    text-align: justify;
+}
+
+main .home .home-text button{
+    background-color: #e85d04;
+    padding: 2px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    box-shadow: 1px 2px 10px #dc2f02;
+}
+
+main .home .home-text button:hover{
+    background-color: #370617;
+    color: white;
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
+
+main .home .home-image img{
+    border: 5px solid #dc2f02;
+    border-radius: 5px;
+}
+
+main .about-me{
+    width: 100%;
+    height: 100vh;
+    color: white;
+}
+
+main .about-me h2{
+    text-align: center;
+    color: #dc2f02;
+    margin: 0;
+}
+
+main .about-me .separate{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    align-items: center;
+}
+
+main .separate .about-image{
+    width: 100%;
+    height: 90vh;
+}
+
+main .separate .about-image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+main .separate .about-text{
+    margin-left: 25px;
+    text-align: justify;
+}
+
+main .projects{
+    width: 100%;
+    height: 100vh;
+    color: white;
+}
+
+main .projects h2{
+    text-align: center;
+    color: #dc2f02;
+    margin: 0;
+}
+
+main .projects .cards{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    width: inherit;
+    height: inherit;
+    place-content: center;
+    gap: 20px;
+}
+
+main .projects .cards .card{
+    width: 100%;
+    height: 100%;
+    box-shadow: 1px 2px 10px #dc2f02;
+    border-radius: 50px;
+}
+
+main .projects .cards .card p{
+    margin: 0;
+    text-align: center;
+}
+
+main .projects .cards .card a{
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+main .projects .cards .card img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .contacts{
+    width: 100%;
+    height: 100vh;
+}
+
+main .contacts .principalTitle {
+    text-align: center;
+    color: #dc2f02;
+}
+
+main .contacts figure{
+    width: 75%;
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin: auto;
+}
+
+main .contacts figure i {
+    font-size: 200px;
+}
+
+main .contacts figure i:first-child {
+    color: #0062e0;
+}
+
+main .contacts figure i:nth-child(2) {
+    color: #f10208;
+}
+
+main .contacts figure i:nth-child(3) {
+    color: #aaaaaa;
+}
+
+footer {
+    width: 100%;
+    background-color: #370617;
+}
+
+footer h4{
+    text-align: center;
+    margin: 0;
+    color: white;
+}
+
+@media (max-width: 1000px) {
+
+    main .bg-conteiner{
+        background-color: #03071e;
+        width: 100%;
+    }
+    main .projects .cards{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 700px) {
+    header nav{
+        width: 100%;
+        margin: 0;
+    }
+
+    header nav .hamburguer {
+        display: block;
+        padding: 25px;
+        font-size: 50px;
+    }
+
+    header nav ul{
+        display: none;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        margin: auto;
+        padding: 0;
+        background-color: #370617;
+        flex-direction: column;
+    }
+
+    header nav ul li{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        z-index: 2;
+        flex-direction: column;
+        height: 50%;
+        font-size: 50px;
+    }
+
+    main .bg-conteiner .home{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column-reverse;
+    }
+
+    main .bg-conteiner .home .home-text{
+        margin-top: 100px;
+    }
+
+    main .bg-conteiner .home .home-image{
+        width: 90%;
+    }
+
+    main .bg-conteiner .home .home-image img{
+        width: 100%;
+    }
+
+    main .bg-conteiner .about-me .separate{
+        display: flex;
+        flex-direction: column;
+    }
+
+    main .bg-conteiner .about-me .separate .about-image {
+        width: 90%;
+        height: 50%;
+    }
+    
+    main .bg-conteiner .about-me .separate .about-image img {
+        width: 100%;
+        height: 100%;
+    }
+
+    main .bg-conteiner .separate .about-text {
+        margin: 0;
+        margin-top: 25px;
+    }
+
+    main .bg-conteiner .projects .cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    main .bg-conteiner .contacts figure{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+}
