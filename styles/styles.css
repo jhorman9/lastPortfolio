@@ -218,17 +218,18 @@ main .contacts .principalTitle {
 }
 
 main .contacts figure{
-    width: 75%;
-    height: 75vh;
+    width: 100%;
+    height: 30vh;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 50px;
     margin: auto;
+    font-size: 50px;
 }
 
 main .contacts figure i {
-    font-size: 100px;
+    font-size: 100%;
     text-align: center;
 }
 
@@ -257,10 +258,36 @@ footer h4{
 
 @media (max-width: 1000px) {
 
+    main {
+        padding-bottom: 50px;
+    }
+
     main .bg-conteiner{
         background-color: #03071e;
-        width: 100%;
+        width: 95%;
     }
+
+    main .home{
+        gap: 20px;
+        height: auto;
+        margin-bottom: 50px;
+        padding-top: 50px;
+    }
+
+    main .about-me{
+        height: auto;
+        margin-bottom: 50px;
+    }
+
+    main .projects{
+        height: auto;
+        margin-bottom: 50px;
+    }
+
+    main .contacts{
+        height: auto;
+        }
+
     main .projects .cards{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -275,7 +302,7 @@ footer h4{
 
     header nav .hamburguer {
         display: block;
-        padding: 25px;
+        padding: 15px;
         font-size: 50px;
     }
 
@@ -283,7 +310,7 @@ footer h4{
         display: none;
         position: absolute;
         width: 100%;
-        height: 100%;
+        height: 90%;
         margin: auto;
         padding: 0;
         background-color: #370617;
@@ -302,7 +329,7 @@ footer h4{
     }
 
     main {
-        padding: 25px;
+        padding-bottom: 25px;
     }
 
     main .bg-conteiner .home{
@@ -312,11 +339,7 @@ footer h4{
         flex-direction: column-reverse;
         width: 100%;
         height: auto;
-        margin-bottom: 25px;
-    }
-
-    main .bg-conteiner .home .home-text{
-        margin-top: 100px;
+        margin-bottom: 50px;
     }
 
     main .bg-conteiner .home .home-image{
