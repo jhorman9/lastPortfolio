@@ -18,6 +18,12 @@ html {
     box-sizing: inherit;
 }
 
+/*UTILIDADES*/
+
+.title{
+    margin-bottom: 25px;
+}
+
 body{
     font-size: 16px;
     font-family: 'Rubik', sans-serif;
@@ -35,8 +41,7 @@ header nav{
 }
 
 header nav .hamburguer {
-    position: absolute;
-    right: 25px;
+    text-align: right;
     padding: 8px;
     font-size: 25px;
     z-index: 3;
@@ -163,7 +168,6 @@ main .projects{
 main .projects h2{
     text-align: center;
     color: #dc2f02;
-    margin: 0;
 }
 
 main .projects .cards{
@@ -224,7 +228,8 @@ main .contacts figure{
 }
 
 main .contacts figure i {
-    font-size: 200px;
+    font-size: 100px;
+    text-align: center;
 }
 
 main .contacts figure i:first-child {
@@ -296,11 +301,18 @@ footer h4{
         font-size: 50px;
     }
 
+    main {
+        padding: 25px;
+    }
+
     main .bg-conteiner .home{
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column-reverse;
+        width: 100%;
+        height: auto;
+        margin-bottom: 25px;
     }
 
     main .bg-conteiner .home .home-text{
@@ -313,6 +325,12 @@ footer h4{
 
     main .bg-conteiner .home .home-image img{
         width: 100%;
+    }
+
+    main .about-me{
+        width: 100%;
+        height: auto;
+        margin-bottom: 50px;
     }
 
     main .bg-conteiner .about-me .separate{
@@ -335,13 +353,25 @@ footer h4{
         margin-top: 25px;
     }
 
+    main .projects{
+        width: 100%;
+        height: auto;
+        margin-bottom: 50px;
+    }
+
     main .bg-conteiner .projects .cards {
         grid-template-columns: repeat(3, 1fr);
     }
 
+    main .contacts{
+        width: 100%;
+        height: auto;
+        margin-bottom: 50px;
+    }
+
     main .bg-conteiner .contacts figure{
         width: 100%;
-        display: flex;
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: 1fr;
     }
 }
