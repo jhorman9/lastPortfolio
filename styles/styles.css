@@ -231,11 +231,6 @@ main .contacts figure a {
     text-align: center;
 }
 
-main .contacts figure i {
-    font-size: 100%;
-    text-align: center;
-}
-
 main .contacts figure a:first-child {
     color: #0062e0;
 }
@@ -246,6 +241,11 @@ main .contacts figure a:nth-child(2) {
 
 main .contacts figure a:nth-child(3) {
     color: #aaaaaa;
+}
+
+main .contacts figure i {
+    font-size: 100%;
+    text-align: center;
 }
 
 footer {
