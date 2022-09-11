@@ -248,6 +248,18 @@ main .contacts figure a:nth-child(3) {
     color: #aaaaaa;
 }
 
+main .contacts figure i:first-child {
+    color: #0062e0;
+}
+
+main .contacts figure i:nth-child(2) {
+    color: #f10208;
+}
+
+main .contacts figure i:nth-child(3) {
+    color: #aaaaaa;
+}
+
 footer {
     width: 100%;
     background-color: #370617;
