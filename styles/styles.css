@@ -209,7 +209,7 @@ main .projects .cards .card img{
 
 main .contacts{
     width: 100%;
-    height: 100vh;
+    height: 30vh;
 }
 
 main .contacts .principalTitle {
@@ -219,7 +219,6 @@ main .contacts .principalTitle {
 
 main .contacts figure{
     width: 100%;
-    height: 30vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -228,20 +227,24 @@ main .contacts figure{
     font-size: 50px;
 }
 
+main .contacts figure a {
+    text-align: center;
+}
+
 main .contacts figure i {
     font-size: 100%;
     text-align: center;
 }
 
-main .contacts figure i:first-child {
+main .contacts figure a:first-child {
     color: #0062e0;
 }
 
-main .contacts figure i:nth-child(2) {
+main .contacts figure a:nth-child(2) {
     color: #f10208;
 }
 
-main .contacts figure i:nth-child(3) {
+main .contacts figure a:nth-child(3) {
     color: #aaaaaa;
 }
 
