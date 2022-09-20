@@ -341,9 +341,11 @@ footer h4{
     }
 
     header nav .hamburguer {
-        display: block;
-        padding: 15px;
-        font-size: 50px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 10px;
+        font-size: 35px;
     }
 
     header nav ul{
@@ -353,6 +355,7 @@ footer h4{
         height: 90%;
         margin: auto;
         padding: 0;
+        left: 0;
         background-color: #370617;
         flex-direction: column;
     }
