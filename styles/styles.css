@@ -144,6 +144,17 @@ main .home .home-image img{
     -moz-border-radius: 41px 6px 40px 6px;
     width: 250px;
     height: auto;
+    animation-name: rotar;
+    animation-duration: 5s;
+}
+
+@keyframes rotar {
+    from{
+        transform: translateX(500px);
+    }
+    to{
+        transform: translateX(0);
+    }
 }
 
 main .about-me{
@@ -341,11 +352,9 @@ footer h4{
     }
 
     header nav .hamburguer {
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        padding: 10px;
-        font-size: 35px;
+        display: block;
+        padding: 0;
+        font-size: 40px;
     }
 
     header nav ul{
@@ -355,9 +364,10 @@ footer h4{
         height: 90%;
         margin: auto;
         padding: 0;
-        left: 0;
         background-color: #370617;
         flex-direction: column;
+        left: 0;
+        margin-top: 10px;
     }
 
     header nav ul li{
@@ -386,7 +396,7 @@ footer h4{
     }
 
     main .bg-conteiner .home .home-image{
-        width: 90%;
+        width: 90%; 
     }
 
     main .bg-conteiner .home .home-image img{
@@ -426,7 +436,7 @@ footer h4{
     }
 
     main .bg-conteiner .projects .cards {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
 
     main .contacts{
